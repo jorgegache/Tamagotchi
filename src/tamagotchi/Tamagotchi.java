@@ -29,17 +29,16 @@ public class Tamagotchi extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnBaya = new javax.swing.JButton();
+        btnBanana = new javax.swing.JButton();
+        btnPlata = new javax.swing.JButton();
+        btnDorada = new javax.swing.JButton();
+        btnPina = new javax.swing.JButton();
         jProgressBar1 = new javax.swing.JProgressBar();
         jProgressBar2 = new javax.swing.JProgressBar();
         jProgressBar3 = new javax.swing.JProgressBar();
         jProgressBar4 = new javax.swing.JProgressBar();
         jProgressBar5 = new javax.swing.JProgressBar();
-        jProgressBar6 = new javax.swing.JProgressBar();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,20 +47,40 @@ public class Tamagotchi extends javax.swing.JFrame {
         jLabel2.setText("mascota");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 320, 110, 120));
 
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+        btnBaya.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/baya.png"))); // NOI18N
+        btnBaya.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBayaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnBaya, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, 80, 90));
 
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, -1, -1));
+        btnBanana.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/latana.png"))); // NOI18N
+        btnBanana.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBananaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnBanana, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, 80, 90));
 
-        jButton3.setText("jButton3");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, -1, -1));
+        btnPlata.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/plateada.png"))); // NOI18N
+        getContentPane().add(btnPlata, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 80, 90));
 
-        jButton4.setText("jButton4");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+        btnDorada.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/dorada.png"))); // NOI18N
+        btnDorada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDoradaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnDorada, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 80, 90));
 
-        jButton5.setText("jButton5");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, -1, -1));
+        btnPina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/piña.png"))); // NOI18N
+        btnPina.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPinaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnPina, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 80, 90));
 
         jProgressBar1.setOrientation(1);
         getContentPane().add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, -1));
@@ -75,13 +94,28 @@ public class Tamagotchi extends javax.swing.JFrame {
 
         jProgressBar5.setOrientation(1);
         getContentPane().add(jProgressBar5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, -1, -1));
-        getContentPane().add(jProgressBar6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 250, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.gif"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnBayaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBayaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBayaActionPerformed
+
+    private void btnDoradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDoradaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDoradaActionPerformed
+
+    private void btnBananaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBananaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBananaActionPerformed
+
+    private void btnPinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPinaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPinaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,11 +153,11 @@ public class Tamagotchi extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton btnBanana;
+    private javax.swing.JButton btnBaya;
+    private javax.swing.JButton btnDorada;
+    private javax.swing.JButton btnPina;
+    private javax.swing.JButton btnPlata;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JProgressBar jProgressBar1;
@@ -131,6 +165,5 @@ public class Tamagotchi extends javax.swing.JFrame {
     private javax.swing.JProgressBar jProgressBar3;
     private javax.swing.JProgressBar jProgressBar4;
     private javax.swing.JProgressBar jProgressBar5;
-    private javax.swing.JProgressBar jProgressBar6;
     // End of variables declaration//GEN-END:variables
 }
