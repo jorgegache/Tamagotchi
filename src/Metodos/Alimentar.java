@@ -10,5 +10,18 @@ package Metodos;
  * @author Yirlany
  */
 public class Alimentar {
+    public final int PINA=10;
+    public final int PLATEADA=25;
+    public final int BAYA=5;
+    public final int DORADA=30;
+    public final int LATANA=35;
     
+    private int barraComida;
+    
+    public int aumentarComida(int comida){
+        if (barraComida<100) {
+            return barraComida+=comida;
+        }
+        return 0;
+    }
 }
