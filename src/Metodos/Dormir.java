@@ -10,5 +10,15 @@ package Metodos;
  * @author Yirlany
  */
 public class Dormir {
+    protected boolean dormir;
+    protected int energia;
+    
+    public Dormir(boolean dormir) {
+        this.dormir = dormir;
+        if(dormir==true){
+            energia+=15;
+        }
+    }
+    
     
 }
