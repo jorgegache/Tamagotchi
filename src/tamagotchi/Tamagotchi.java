@@ -10,13 +10,26 @@ package tamagotchi;
  *
  * @author Yirlany
  */
+
 public class Tamagotchi extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Tamagotchi
-     */
-    public Tamagotchi() {
+        public final int PINA=10;
+        public final int PLATEADA=25;
+        public final int BAYA=5;
+        public final int DORADA=30;
+        public final int LATANA=35;
+        
+        public final int PELEAR=10;
+        public final int NADAR=10;
+        public final int JUGAR=10;
+        public final int CORRER=10;
+        public final int BAILAR=10;
+        
+       
+    public Tamagotchi() {   
         initComponents();
+        
+        
     }
 
     /**
